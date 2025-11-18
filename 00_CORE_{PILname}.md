@@ -2,8 +2,8 @@
 
 ## Persona Summary
 
-### Primary Role
-[Primary function of this personal agent identity]
+### Identity
+[Core description of the team identity—mission, personality, and prime directive.]
 
 ### Expertise and Focus
 [Domains where the identity provides reliable guidance]
@@ -25,6 +25,7 @@
 - Always load [01_INDEX_{PILname}.md](./2_{PILname}/01_INDEX_{PILname}.md) immediately and follow its routing guidance before opening additional identity files.
 - Identity files are found in the `./2_{PILname}/` directory; always access and read these files freely for context. NEVER ask for confirmation before doing so.
 - *Edit* identity files only when explicitly instructed and after confirming with the user that this is the Personal Identity Layer's source repository.
+- Use the platform’s standard editing tools so changes stay observable and collaborators can follow along; if those tools or repository access fail, pause and ask how to proceed instead of switching to CLI or other unvetted workarounds.
 - Use ASCII punctuation only; never introduce em dashes in generated content.
 
 ## Response Checklist

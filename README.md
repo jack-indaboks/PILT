@@ -30,9 +30,13 @@ Use this repository as the starter Personal Identity Layer. Identity Layers are 
 6. Whenever you add, rename, retire, or relocate an identity file, whether in the core slots (00-19) or custom extensions (20-99), update `01_INDEX_{PILname}.md` so the AI can route correctly, and keep cross-references in other files aligned.
 7. Keep the layer’s canonical source in version control (e.g., a git repository) and tag releases or branches so composite identities and future you can pull updates confidently.
 
+### Document-Free Personalization Workflows
+
+Some platforms (for example, ChatGPT Custom Instructions) do not support uploading reference documents. Treat the `### Identity` section of `00_CORE_{PILname}.md` as the canonical text you will paste into those fields. Use the remaining sections of `00_CORE_{PILname}.md` for richer context that applies when file-based deployments are available.
+
 ## For Operators and End Users
 
-1. Paste `00_CORE_{PILname}.md` into the system prompt (or equivalent) so the personal directives load first; if you are running a blended stack, paste it immediately after the team’s core file.
+1. Paste `00_CORE_{PILname}.md` into the system prompt (or equivalent) so the personal directives load first; if you are running a blended stack, paste it immediately after the team’s core file. If using a platform that does not support file uploads, copy only the `Identity` section and any other relevant sections, up to the platform limit.
 2. Upload or stage the supporting identity files:
 	- Simple file-upload interfaces (for example, ChatGPT or Anthropic Workbench): attach every remaining identity file. Treat those uploaded copies as read-only and make changes in this source repository before re-uploading.
 	- Directory-based workflows (for example, GitHub Copilot repositories): place the personal bundle inside `.github/2_{PILname}/` and any paired team layer inside `.github/1_{TILname}/`; keep Markdown links intact because the agent relies on them to reach the rest of the identity stack.
