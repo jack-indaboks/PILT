@@ -12,13 +12,15 @@ Use this repository as the starter Personal Identity Layer. Identity Layers are 
 | 01 | `01_INDEX_{ILname}.md` | Routing guide that tells the agent when to load each identity file and what prerequisites apply. |
 | 02 | `02_TASKS_{ILname}.md` | Personal workflows or shortcuts the agent runs verbatim when their triggers fire. |
 | 03 | `03_SOURCES_{ILname}.md` | Registry of preferred sources plus the allowed and disallowed lists that govern research. |
-| 04-08 | Reserved | Future core template slots shared across personal identity layers. |
+| 04 | `04_PERSONAS_{ILname}.md` | Catalog of alternate personas plus activation guidance for sanctioned voice shifts. |
+| 05-08 | Reserved | Future core template slots shared across personal identity layers. |
 | 09 | `09_MEMORY.md` | Optional durable memory log the agent creates only when the deployment allows file writes. |
 | 10 | `10_USER_{ILname}.md` | In-depth profile of the primary user for tailoring voice, tone, and priorities. |
 | 11 | `11_PEOPLE_{ILname}.md` | Profiles for additional contacts the personal agent should recognize and support. |
 | 12 | `12_ORGANIZATION_{ILname}.md` | Organizations and initiatives that shape the user’s work. |
 | 13 | `13_ENVIRONMENT_{ILname}.md` | Devices, software, automation, and other environmental constraints. |
-| 14-18 | Reserved | Future shared template slots. |
+| 14 | `14_PROJECTS_{ILname}.md` | Portfolio of active initiatives with status, dependencies, and handoff notes. |
+| 15-18 | Reserved | Future shared template slots. |
 | 19 | `19_GLOSSARY_{ILname}.md` | Canonical definitions for personal terminology and shorthand. |
 | 20-99 | Custom extensions | Additional identity files you create to extend the personal layer. |
 
