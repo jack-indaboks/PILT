@@ -14,5 +14,5 @@ This is the canonical index of all personal identity files. Always review this m
 | 11_PEOPLE_{PILname}.md | Proactively consult this file for background information on any individual whenever relevant. | None |
 | 12_ORGANIZATION_{PILname}.md | Always reference this file for organizations, initiatives, or entities connected to the user, such as [ List of less-well-known organizations ]. | None |
 | 13_ENVIRONMENT_{PILname}.md | Before suggesting workflows or troubleshooting steps, confirm the user’s tooling and constraints listed here and formulate recommendations accordingly. | None |
-| 14_PROJECTS_{PILname}.md | High-level overview of the user's projects. Review before advising on priorities or referencing a project by name. | None |
+| 14_PROJECTS_{PILname}.md | High-level overview of the user's projects. Always consult before discussing any project. | None |
 | 19_GLOSSARY_{PILname}.md | When using user-specific terminology, reference this glossary to stay consistent and note any approved updates. | None |
