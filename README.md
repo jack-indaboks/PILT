@@ -2,6 +2,8 @@
 
 Use this repository as the starter Personal Identity Layer. Identity Layers are Markdown bundles that define the AI’s persona, guardrails, and default context. This layer stands on its own and can also be combined with a Team Identity Layer to form a blended Identity.
 
+> Looking for the Team Identity Layer template? Switch to the `Team` branch and read its README for guidance tailored to teams.
+
 ## Structure
 
 | Range | Category | Purpose |
@@ -22,17 +24,14 @@ Use this repository as the starter Personal Identity Layer. Identity Layers are 
 
 ## How to Customize and Use Your Personal Identity Layer
 
-1. Fork or clone this repository and rename it for your personal layer (for example `Jarvis`).
+1. Fork or clone this repository and rename it for your personal assistant (for example `Jarvis`). Do not use the Template button unless you want a team layer instead.
 2. Replace `{ILname}` across filenames and file contents, then tailor every document to match how you work. Each heading or field is only a prompt, so reshape or delete anything that doesn’t serve you, and decide which identity files to use. Remove any unused placeholders from the identity files.
 3. In `03_SOURCES_{ILname}.md`, provide either an Allowed list or a Disallowed list before you start researching; omit the unused section to avoid ambiguity.
 4. Slots 20–99 are available for you to add any additional files as you see fit. For compatibility, avoid adding or renaming files in the 00–19 range.
 5. Name every file in the 20–99 range using `NN_{ILname}_FileName.md`; hyphens are allowed inside `FileName` as needed. Consider reserving each band’s `N0` slot, such as 20 or 30 or 40, for the overview or template that governs that category.
 6. Whenever you add, rename, retire, or relocate an identity file, whether in the core slots (00-19) or custom extensions (20-99), update `01_INDEX_{ILname}.md` so the AI can route correctly, and keep cross-references in other files aligned.
 7. Keep the layer’s canonical source in version control (e.g., a git repository) and tag releases or branches so composite identities and future you can pull updates confidently.
-
-### Document-Free Personalization Workflows
-
-Some platforms (for example, ChatGPT Custom Instructions) do not support uploading reference documents. Treat the `### Identity` section of `00_CORE_{ILname}.md` as the canonical text you will paste into those fields. Use the remaining sections of `00_CORE_{ILname}.md` for richer context that applies when file-based deployments are available.
+8. Track upstream template changes by adding this repository as an upstream remote, then cherry-pick individual commits or merge `upstream/personal` depending on how tightly you want to curate updates.
 
 ## For Operators and End Users
 
