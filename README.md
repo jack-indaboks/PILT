@@ -24,6 +24,12 @@ Use this repository as the starter Personal Identity Layer. Identity Layers are 
 | 19 | `19_GLOSSARY_{ILname}.md` | Canonical definitions for personal terminology and shorthand. |
 | 20-99 | Custom extensions | Additional identity files you create to extend the personal layer. |
 
+### `00_CORE_{ILname}.md` Sections
+- **Identity (maintainer-owned · blend equally):** Define the persona’s mission, tone, and expertise. In a blended stack this content merges directly with the team identity—neither layer outranks the other.
+- **Governance (maintainer-owned · enforce the stricter rule):** Capture guardrails, compliance standards, and escalation paths. When governance from personal and team cores conflicts, the assistant obeys whichever instruction is stricter, defaulting to the team interpretation unless the user explicitly frames the work as personal-only.
+- **Preferences (maintainer-owned · personal overrides by default):** Document reusable formats, cadence notes, and stylistic defaults. Personal preferences take precedence unless the team layer labels a preference as mandatory.
+- **Identity Layer Protocol (template-maintained · do not edit):** Reserved instructions that keep the identity stack working. They cover file mechanics (index loading, file locations, edit warnings) and context blending. Only modify this section if you are evolving the template itself.
+
 ## How to Customize and Use Your Personal Identity Layer
 
 1. Fork or clone this repository and rename it for your personal assistant (for example `Jarvis`). Do not use the Template button unless you want a team layer instead.
