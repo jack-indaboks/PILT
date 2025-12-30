@@ -24,26 +24,26 @@ Use this repository as the starter Personal Identity Layer. Identity Layers are 
 | 19 | `19_GLOSSARY_{ILname}.md` | Canonical definitions for personal terminology and shorthand. |
 | 20-99 | Custom extensions | Additional identity files you create to extend the personal layer. |
 
-### `00_CORE_{ILname}.md` Sections
-- **Identity (maintainer-owned · blend equally):** Define the persona’s mission, tone, and expertise. In a blended stack this content merges directly with the team identity—neither layer outranks the other.
-- **Governance (maintainer-owned · enforce the stricter rule):** Capture guardrails, compliance standards, and escalation paths. When governance from personal and team cores conflicts, the assistant obeys whichever instruction is stricter, defaulting to the team interpretation unless the user explicitly frames the work as personal-only.
-- **Preferences (maintainer-owned · personal overrides by default):** Document reusable formats, cadence notes, and stylistic defaults. Personal preferences take precedence unless the team layer labels a preference as mandatory.
-- **Identity Layer Protocol (template-maintained · do not edit):** Reserved instructions that keep the identity stack working. They cover file mechanics (index loading, file locations, edit warnings) and context blending. Only modify this section if you are evolving the template itself.
-
 ## How to Customize and Use Your Personal Identity Layer
 
 1. Fork or clone this repository and rename it for your personal assistant (for example `Jarvis`). Do not use the Template button unless you want a team layer instead.
-2. Replace `{ILname}` across filenames and file contents, then tailor every document to match how you work. Each heading or field is only a prompt, so reshape or delete anything that doesn’t serve you, and decide which identity files to use. Remove any unused placeholders from the identity files.
-3. In `03_SOURCES_{ILname}.md`, provide either an Allowed list or a Disallowed list before you start researching; omit the unused section to avoid ambiguity.
-4. Slots 20–99 are available for you to add any additional files as you see fit. For compatibility, avoid adding or renaming files in the 00–19 range.
-5. Name every file in the 20–99 range using `NN_{ILname}_FileName.md`; hyphens are allowed inside `FileName` as needed. Consider reserving each band’s `N0` slot, such as 20 or 30 or 40, for the overview or template that governs that category.
-6. Whenever you add, rename, retire, or relocate an identity file, whether in the core slots (00-19) or custom extensions (20-99), update `01_INDEX_{ILname}.md` so the AI can route correctly, and keep cross-references in other files aligned.
-7. Keep the layer’s canonical source in version control (e.g., a git repository) and tag releases or branches so composite identities and future you can pull updates confidently.
-8. Track upstream template changes by adding this repository as an upstream remote, then cherry-pick individual commits or merge `upstream/personal` depending on how tightly you want to curate updates.
+2. Replace `{ILname}` across filenames and file contents.
+3. Populate `00_CORE_{ILname}.md`:
+    - **Identity** — The team persona’s mission, tone, and expertise.
+    - **Governance** — Guardrails, sourcing policies, and escalation paths the team expects the assistant to enforce.
+    - **Preferences** — Reusable formats, cadence notes, and stylistic defaults; mark anything that must remain mandatory during collaboration.
+    - **Identity Layer Protocol** — template-maintained section that keeps the identity stack functional; only edit when evolving this template.
+4. Tailor every document to match how you work. Each heading or field is only a prompt, so reshape or delete anything that doesn’t serve you, and decide which identity files to use. Remove any unused placeholders from the identity files.
+5. In `03_SOURCES_{ILname}.md`, provide either an Allowed list or a Disallowed list before you start researching; omit the unused section to avoid ambiguity.
+6. Slots 20–99 are available for you to add any additional files as you see fit. For compatibility, avoid adding or renaming files in the 00–19 range.
+7. Name every file in the 20–99 range using `NN_{ILname}_FileName.md`; hyphens are allowed inside `FileName` as needed. Consider reserving each band’s `N0` slot, such as 20 or 30 or 40, for the overview or template that governs that category.
+8. Whenever you add, rename, retire, or relocate an identity file, whether in the core slots (00-19) or custom extensions (20-99), update `01_INDEX_{ILname}.md` so the AI can route correctly, and keep cross-references in other files aligned.
+9. Keep the layer’s canonical source in version control (e.g., a git repository) and tag releases or branches so composite identities and future you can pull updates confidently.
+10. Track upstream template changes by adding this repository as an upstream remote, then cherry-pick individual commits or merge `upstream/personal` depending on how tightly you want to curate updates.
 
 ## For Operators and End Users
 
-1. Paste `00_CORE_{ILname}.md` into the system prompt (or equivalent) so the personal directives load first; if you are running a blended stack, paste it immediately after the team’s core file. If using a platform that does not support file uploads, copy only the `Identity` section and any other relevant sections, up to the platform limit.
+1. Paste `00_CORE_{ILname}.md` into the system prompt (or equivalent); if you are running a blended stack, paste it immediately after the team’s core file. If using a platform that does not support file uploads, copy only the `Identity` section and any other relevant sections, up to the platform limit.
 2. Upload or stage the supporting identity files:
 	- Simple file-upload interfaces (for example, ChatGPT or Anthropic Workbench): attach every remaining identity file. Treat those uploaded copies as read-only and make changes in this source repository before re-uploading.
 	- Directory-based workflows (for example, GitHub Copilot repositories): place the personal bundle inside `.github/2_{ILname}/` and any paired team layer inside `.github/1_{TILname}/`; keep Markdown links intact because the agent relies on them to reach the rest of the identity stack.
