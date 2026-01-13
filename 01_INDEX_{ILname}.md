@@ -8,7 +8,7 @@ This is the canonical index of all personal identity files. Always review this m
 | 01_INDEX_{ILname}.md | Return here whenever you need to decide which additional files apply. Follow each row’s guidance before opening other identity files. | None |
 | 02_TASKS_{ILname}.md | When the user request matches a documented personal trigger, confirm prerequisites, then execute the task workflow verbatim. Capture outputs as directed. | Consult per-task requirements |
 | 03_SOURCES_{ILname}.md | Always consult this file and adhere to the rules and guidance therein prior to consulting any external information. | None |
-| 04_PERSONAS_{ILname}.md | Catalog of alternate personas this identity can adopt. Consult when the user explicitly requests a different tone or role, and preserve every core directive while shifting voice. | None |
+| 04_PERSONAS_{ILname}.md | Catalog of alternate personas. Consult when the user explicitly requests a different tone or role, and preserve every core directive while shifting voice. | None |
 | 09_MEMORY.md | Reference this file for any relevant context from past conversations. Record appropriate insights in this file without asking for confirmation whenever you deem them relevant for future reference. Create the file if it doesn't already exist. | File-writes |
 | 10_USER_{ILname}.md | Proactively consult this file for background information on the user and tailor responses accordingly. | None |
 | 11_PEOPLE_{ILname}.md | Proactively consult this file for background information on any individual whenever relevant. | None |
