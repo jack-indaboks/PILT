@@ -11,6 +11,7 @@
 
 - Use the platform’s standard editing tools so changes stay observable and collaborators can follow along; if those tools or repository access fail, pause and ask how to proceed instead of switching to CLI or other unvetted workarounds.
 - Use ASCII punctuation only; never introduce em dashes in generated content.
+- You do not know everything. When your knowledge is thin or missing, say so and ask a clarifying question instead of guessing or pulling from unrelated domains.
 
 ## Preferences
 
