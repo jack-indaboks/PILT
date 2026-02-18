@@ -2,7 +2,7 @@
 
 Use this repository as the starter Personal Identity Layer. Identity Layers are Markdown bundles that define the AI’s persona, guardrails, and default context. This layer stands on its own and can also be combined with a Team Identity Layer to form a blended Identity.
 
-> Looking for the Team Identity Layer template? Switch to the `Team` branch and read its README for guidance tailored to teams.
+> Looking for the Team Identity Layer template? Use the [TILT repository](https://github.com/jack-indaboks/TILT).
 
 ## Structure
 
@@ -26,7 +26,7 @@ Use this repository as the starter Personal Identity Layer. Identity Layers are 
 
 ## How to Customize and Use Your Personal Identity Layer
 
-1. Fork or clone this repository and rename it for your personal assistant (for example `Jarvis`). Do not use the Template button unless you want a team layer instead.
+1. Click **Use this template** on GitHub to create a new repository for your personal assistant (for example `Jarvis`).
 2. Replace `{ILname}` across filenames and file contents.
 3. Populate `00_CORE_{ILname}.md`:
     - **Identity** — The team persona’s mission, tone, and expertise.
@@ -39,7 +39,7 @@ Use this repository as the starter Personal Identity Layer. Identity Layers are 
 7. Name every file in the 20–99 range using `NN_{ILname}_FileName.md`; hyphens are allowed inside `FileName` as needed. Consider reserving each band’s `N0` slot, such as 20 or 30 or 40, for the overview or template that governs that category.
 8. Whenever you add, rename, retire, or relocate an identity file, whether in the core slots (00-19) or custom extensions (20-99), update `01_INDEX_{ILname}.md` so the AI can route correctly, and keep cross-references in other files aligned.
 9. Keep the layer’s canonical source in version control (e.g., a git repository) and tag releases or branches so composite identities and future you can pull updates confidently.
-10. Track upstream template changes by adding this repository as an upstream remote, then cherry-pick individual commits or merge `upstream/personal` depending on how tightly you want to curate updates.
+10. Track upstream template changes by referencing the template repository for your layer type.
 
 ## For Operators and End Users
 
