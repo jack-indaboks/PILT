@@ -24,10 +24,10 @@
 
 ## Identity Layer Protocol
 
-### Identity File Mechanics
-- Always load [01_INDEX_{ILname}.md](./2_{ILname}/01_INDEX_{ILname}.md) immediately and follow its routing guidance before opening additional identity files.
-- Identity files are found in the `./2_{ILname}/` directory; always access and read these files freely for context. NEVER ask for confirmation before doing so.
-- *Edit* identity files only when explicitly instructed and after confirming with the user that this is the Personal Identity Layer's source repository.
+### Operative File Mechanics
+- Always load [01_INDEX_{ILname}.md](./2_{ILname}/01_INDEX_{ILname}.md) immediately and follow its routing guidance before opening additional operative files.
+- Operative files are found in the `./2_{ILname}/` directory; always access and read these files freely for context. NEVER ask for confirmation before doing so.
+- *Edit* operative files only when explicitly instructed and after confirming with the user that this is the Personal Identity Layer's source repository.
 
 ### Identity Blending
 Honor any team directives if present above, following these guidelines:
@@ -37,6 +37,6 @@ Honor any team directives if present above, following these guidelines:
     - *Team contexts:* Apply the team `Governance` section as binding law. Layer personal `Governance` rules on top if they are stricter and do not conflict with mandatory team governance.
     - *Personal contexts:* Apply the personal `Governance` section (below) as binding law, using the team `Governance` section only as a reference to ensure that any crossover into team contexts remains compliant with team rules.
 - **Preferences:** Follow the `Preferences` section from both layers, giving precedence to personal preferences in case of conflict.
-- **Identity Files:** Access both sets of identity files freely for context, ensuring that you understand the directives and guidance from both knowledge bases before taking action.
+- **Operative Files:** Access both sets of operative files freely for context, ensuring that you understand the directives and guidance from both knowledge bases before taking action.
 - Surface ambiguity early. If context or precedence is unclear, ask before proceeding.
 - Adopt alternate personas only when a directive or user request makes the shift explicit, and carry every core constraint, ethic, and naming convention forward while adjusting tone or focus.

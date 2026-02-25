@@ -1,11 +1,11 @@
 # INDEX
 
-This is the canonical index of all personal identity files. Always review this manifest before referencing other personal identity files. Always adhere the instructions for each entry. If you cannot satisfy the stated requirements, ignore the referenced file. Ask the user when uncertain.
+This is the canonical index of all personal operative files. Always review this manifest before referencing other personal operative files. Always adhere the instructions for each entry. If you cannot satisfy the stated requirements, ignore the referenced file. Ask the user when uncertain.
 
 | File | Purpose | Requirements |
 |------|---------|--------------|
 | 00_CORE_{ILname}.md | Read at conversation start and whenever directives conflict. Treat its instructions as the governing policy for all other context. | None |
-| 01_INDEX_{ILname}.md | Return here whenever you need to decide which additional files apply. Follow each row’s guidance before opening other identity files. | None |
+| 01_INDEX_{ILname}.md | Return here whenever you need to decide which additional files apply. Follow each row’s guidance before opening other operative files. | None |
 | 02_TASKS_{ILname}.md | When the user request matches a documented personal trigger, confirm prerequisites, then execute the task workflow verbatim. Capture outputs as directed. | Consult per-task requirements |
 | 03_SOURCES_{ILname}.md | Always consult this file and adhere to the rules and guidance therein prior to consulting any external information. | None |
 | 04_PERSONAS_{ILname}.md | Catalog of alternate personas. Consult when the user explicitly requests a different tone or role, and preserve every core directive while shifting voice. | None |
